@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+</head>
+<body>
+	<h1 style="text-align: center;"> Events & DOM in JavaScript </h1>	
+	
+	<h3 style="text-align: center;"> An Event is called when a particular block of code or script is triggered on firing on an button 
+	</h3>	
+
+	<div class="cta">
+		<a href="#">click me</a>
+		<Button id="booking-alert" >this is booking alert!</button>
+	</div>
+
+
+<script>
+		// const CTA = document.querySelector(".cta a");
+		// const ALERT = document.querySelector("#booking-alert");
+
+		// CTA.classList.remove("hide");
+		// ALERT.classList.add("hide");
+
+		// function reveal(){
+		// 	CTA.classList.toggle("hide");
+		// 	ALERT.classList.toggle("hide");
+		// }
+
+		// CTA.onclick = reveal;
+		const bookingAlert = document.querySelector("#booking-alert");
+
+		function reveal(){
+			console.log("yoo whats up my brother!");
+		}
+
+		bookingAlert.addEventListener("click", function(){
+			console.log("This")
+		});
+
+	</script>
+</body>
+</html>

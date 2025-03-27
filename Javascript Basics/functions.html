@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Function basics</title>
+	<script type="text/javascript">
+		console.log("Hello World!")
+		// function mul(){
+		// 	let res = 3 * 4;
+		// 	console.log("Multiplication : ",res);
+		// }
+		// mul();
+
+		// var trial = (function(a,b){
+		// 	var res;
+		// 	a > b ? console.log("Yes, a is greater than b") : console.log("No, a is NOT greater then b");
+		// 	res = a * b;
+		// 	return res;
+		// })(11,10)
+
+		// console.log(trial);
+
+		// const : constant (cannot be changed throughout the program)
+		// var  : Can be change for entire function scope unlike const(changes all values in code)
+		// let :  can be change but only for the nested function not for all values in code
+
+		function findVariables(){
+			let num = 5;
+			if(num){
+				let num = 7;
+				console.log(num);
+			}
+			console.log(num);
+		}
+
+		findVariables();
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

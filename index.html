@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deakin University</title>
+    <link href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/css/materialize.min.css" rel="stylesheet">
+    <style>
+		body{
+			background-color: black;
+			color: whitesmoke;
+		}
+        .navbar {
+            background-color: #5AFF6C;
+        }
+        .navbar a {
+            color: black;
+        }
+		.imglogo{
+			position: relative;
+			top: 7px;
+			left: 325px;
+		}
+    </style>
 </head>
 <body>
-Welcome 
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+			<img class="imglogo" src="https://imgs.search.brave.com/MImozjqT1rEn-ycJQOF9uAKgrnCWqWgf3F529afX714/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y291cnNlc2Vla2Vy/LmVkdS5hdS9hc3Nl/dHMvaW1hZ2VzL2lu/c3RpdHV0aW9ucy8z/MDMwLnBuZw" height="50" width="50" alt="Deakin University Logo">
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/add?num1=5&num2=10">Add Numbers</a></li>
+                <li><a href="/user/1">User Info</a></li>
+            </ul>
+			
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to <span style="color:#5AFF6C; font-weight: bold ">EV Charge Station</span></h1>
+        <p>Explore the links in the navbar to navigate through the app.</p>
+		<a style="background-color: #5AFF6C; color: black;" class="waves-effect waves-light btn">EV stations near me</a>
+		<img class="materialboxed" width="100%" src="https://i.ibb.co/6c78q8kh/image.png">
+		<!-- <img class="materialboxed" width="100%" src="https://i.ibb.co/HLTSmfkG/image.png"> -->
+
+    </div>
+	
+	<!-- <iframe src='https://my.spline.design/evcharging-26b4e006c41f078d3162e1e5feb5915d/' frameborder='0' width='100%' height='100%'></iframe> -->
+
+    <!-- Materialize JS for interactive components like the navbar -->
+    <script src="/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/js/materialize.min.js"></script>
+
 </body>
-<script>
-	var date = new Date();
-	document.body.innerHTML = "<h1> Hello Today's date is : " +date+ "</h1>"
-</script>
-<script type="text/javascript" src="script.js"></script>
 </html>
